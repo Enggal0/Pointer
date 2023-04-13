@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int angka = 10;
+    int* ptrAngka; // Deklarasi pointer
+
+    ptrAngka = &angka; // Inisialisasi pointer dengan alamat variabel angka
+
+    cout << "Nilai dari variabel angka: " << angka << endl;
+    cout << "Alamat dari variabel angka: " << &angka << endl;
+    cout << "Nilai yang ditunjuk oleh pointer: " << *ptrAngka << endl; // Mengakses nilai yang ditunjuk oleh pointer
+    cout << "Alamat yang disimpan dalam pointer: " << ptrAngka << endl; // Mengakses alamat yang disimpan dalam pointer
+
+    *ptrAngka = 20; // Mengubah nilai variabel angka melalui pointer
+
+    cout << "Nilai dari variabel angka setelah diubah melalui pointer: " << angka << endl;
+
+    return 0;
+}
